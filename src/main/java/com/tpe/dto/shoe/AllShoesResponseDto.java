@@ -9,4 +9,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class AllShoesResponseDto extends AllGoodsVariablesDto {
+    public AllShoesResponseDto(String a, String b) {
+        super(a,b);
+    }
 }
