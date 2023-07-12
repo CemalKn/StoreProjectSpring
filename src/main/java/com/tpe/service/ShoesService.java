@@ -35,4 +35,14 @@ public class ShoesService {
         shoes.forEach(t-> shoesDto.add(new AllShoesResponseDto(t.getName(),t.getPrice())));
         return shoesDto;
     }
+
+    public String delete(String name) {
+        Shoes shoes = shoesRepository.findByName(name);
+        if (shoes==null){
+            return "Shoe has been not found!";
+        }else {
+            shoesRepository.delete(shoes);
+            return "Shoe Deleted";
+        }
+    }
 }

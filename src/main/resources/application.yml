@@ -8,9 +8,9 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/store_project_db
-    username: dev_user
-    password: password
+    url: jdbc:postgresql://localhost:5432/1
+    username: 2
+    password: 3
   jpa:
     show-sql: true
     hibernate:
